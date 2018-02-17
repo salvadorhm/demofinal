@@ -1,0 +1,5 @@
+'/agenda', 'application.controllers.agenda.index.Index',
+'/agenda/view/(.+)', 'application.controllers.agenda.view.View',
+'/agenda/edit/(.+)', 'application.controllers.agenda.edit.Edit',
+'/agenda/delete/(.+)', 'application.controllers.agenda.delete.Delete',
+'/agenda/insert', 'application.controllers.agenda.insert.Insert',

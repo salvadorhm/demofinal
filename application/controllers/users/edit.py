@@ -77,3 +77,4 @@ class Edit:
             return config.render.edit(result, message) # render edit.html again
         else: # update user data succefully
             raise config.web.seeother('/users') # render users index.html
+            

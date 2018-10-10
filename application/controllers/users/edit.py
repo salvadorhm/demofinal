@@ -69,7 +69,7 @@ class Edit:
             user_hash,
             form['change_pwd']
         )
-        if result == None: # Error on udpate values
+        if result is None: # Error on udpate values
             username = config.check_secure_val(str(username)) # validate HMAC username
             result = config.model.get_users(username) # search for username data
             result.username = config.make_secure_val(str(result.username)) # apply HMAC to username
